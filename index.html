@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <script src="https://kit.fontawesome.com/4ce1eac851.js" crossorigin="anonymous"></script>
+    <title>Twitter</title>
+</head>
+<body>
+    <main>
+        <section id="nav">
+            <div id="items">
+                <div class="nav-links">
+                    <a>
+                        <img class="twitter-logo" src="img/logoTwitter.png" alt="logo" />
+                    </a>
+                    <a href=""> <i class="fa-solid fa-house"></i>
+                        <span>Home</span></a>
+                    <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass">
+                        </i>
+                        <span>search</span> </a>
+                    <a href=""> <i class="fa-regular fa-bell"></i>
+                        <span>Notifications</span>
+                    </a>
+                    <a href=""><i class="fa-regular fa-envelope"></i>
+                        <span>Messages</span>
+                    </a>
+                    <a href=""><i class="fa-regular fa-bookmark"></i>
+                        <span>Bookmarks</span>
+                    </a>
+                    <a href=""><i class="fa-regular fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                    <button class="tweet-btn">
+                        Post
+                    </button>
+                </div>
+            </div>
+            <div id="profile" class="main-account">
+                <div class="img-info">
+                    <a href="index.html"><img src="img/profile.jpg" class="profile-img"></a>
+                </div>
+                <div class="account-details">
+                    <span class="account-name">Dalia Mohisen</span>
+                    <br> 
+                    <span class="account-username">@daliamohisen</span>
+                </div>
+                <i class="fa-sharp fa-solid fa-ellipsis"></i>
+            </div>
+        </section>
+        <section id="main-section">
+            <div id="main-header">
+                <h1>Home</h1>
+                <div>
+                    <a id="selected">For you</a>
+                    <a>Following</a>
+                </div>
+            </div>
+            <div id="tweet-header">
+                <i class="fa-solid fa-arrow-left"></i>
+                <p>Post</p>
+            </div>
+            <div id="create-post">
+                <div class="create-post-content">
+                    <a href="home.html"><img src="profile.png" class="profile-img"></a>
+                    <div id="create-post-right">
+                        <div>
+                            <textarea placeholder="What is happening?!" id="textareaPost"></textarea>
+                        </div>
+                        <div id="create-post-bottom">
+                            <div>
+                                <i class="fa-regular fa-image"></i>
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-solid fa-square-poll-horizontal"></i>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <button id="postButton">Post</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="tweets">
+                <div class="tweet" id="tweet-replica" style="display: none;">
+                    <div class="tweet-left">
+                        <a href="home.html"><img src="img/profile.png" class="profile-img"></a>
+                    </div>
+                    <div class="tweet-right">
+                        <div class="tweet-top-info">
+                            <div class="tweet-name"></div>
+                            <div class="tweet-username"></div>
+                            <div class="tweet-time-divider"></div>
+                            <div class="tweet-time">8:45</div>
+                            <i class="fa-solid fa-ellipsis tweet-more"></i>
+                        </div>
+                        <div class="tweet-post">
+                        </div>
+                        <div class="tweet-bottom-info">
+                            <div class="tweet-comment">
+                                <i class="fa-regular fa-comment"></i>
+                            </div>
+                            <div class="tweet-retweet">
+                                <i class="fa-solid fa-repeat"></i>
+                            </div>
+                            <div class="tweet-like" >
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="tweet-stats">
+                                <i class="fa-solid fa-signal" ></i>
+                            </div>
+                            <div class="tweet-share">
+                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="side-feed">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="trending">
+                    <h1 class="h1-title">What's happening</h1>
+                    <div class="item-category">
+                        <span>Trending for you</span>
+                    </div>
+                    <div class="item-category">
+                        <p>ChatGPT</p><i class="fa-sharp fa-solid fa-ellipsis"></i>
+                    </div>
+                    <span style="font-size:14px;">58.6k posts</span>
+                    <div class="item-category">
+                        <p>Paris Fashion Week</p><i class="fa-sharp fa-solid fa-ellipsis"></i>
+                    </div>
+                    <span style="font-size:14px;">1M posts</span>
+                    <div class="item-category">
+                        <p>#RealMadrid</p><i class="fa-sharp fa-solid fa-ellipsis"></i>
+                    </div>
+                    <span style="font-size:14px;">90.6k posts</span>
+                    <div class="item-category">
+                        <p>Rainy_Day</p><i class="fa-sharp fa-solid fa-ellipsis"></i>
+                    </div>
+                    <span style="font-size:14px;">1k posts</span>
+                    <a href="" class="show-more">Show more</a>
+                </div>
+            </div>
+            <div class="follow">
+                <h1 class="h1-title">Who to follow</h1>
+                <div class="follow-profile">
+                    <img src="img/profile.jpg" alt="" class="tweet-img">
+                    <div class="follow-details">
+                        <a href="">
+                            Dalia
+                        </a>
+                        <span id="follows">follows you</span>
+                        <br>
+                        <span style="color: #acacac;">@dalia_21 </span>
+                    </div>
+                    <button class="tweet-button">Follow back</button>
+                </div>
+                <div class="follow-profile">
+                    <img src="img/profile.jpg" alt="" class="tweet-img">
+                    <div class="follow-details">
+                        <a href="">
+                            Dalia21
+                        </a>
+                        <br>
+                        <span style="color: #acacac;">@daliamo_21</span>
+                    </div>
+                    <button class="tweet-button">Follow</button>
+                </div>
+                <div class="follow-profile">
+                    <img src="img/profile.jpg" alt="" class="tweet-img">
+                    <div class="follow-details">
+                        <a href="">
+                            dalia
+                        </a>
+                        <span id="follows">follows you</span>
+                        <br>
+                        <span style="color: #acacac;">@dalia_moh </span>
+                    </div>
+                    <button class="tweet-button">Follow back</button>
+                </div>
+                <a href="" class="show-more">Show more</a>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
